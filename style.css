@@ -245,7 +245,7 @@ section{
     font-size: 1em;
     justify-content: center;
     padding: 3em 3em;
-    margin: 1em 1em;
+    margin: 2em 2em;
     font-family: Circular;
 }
 .carousel_button_prev,
@@ -389,8 +389,14 @@ iframe{
     width: 100%;
     height: 100%;
     margin: auto auto;
-    padding-top: 32%;
+    padding-top: 25%;
     position: relative;
     color: #ffffff;
 }
 
+.red_filter{
+    background-color: #d011179a;
+    padding: 1em 0;
+    width: 80%;
+    margin: 0 auto;
+}
