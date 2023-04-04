@@ -26,6 +26,8 @@ h2 {
     color: #3D3D3E;
     font-family: Grotesk;
     font-size: clamp(1.75em, 1em + 3vw, 2.5em);
+    text-align: center;
+    padding-bottom: 1em;
 }
 
 h3 {
@@ -39,19 +41,22 @@ header {
     background-image: url(img/duotone.png);
     background-position: center;
     background-attachment: fixed;
-    height: 600px;
+    height: 80vh;
 }
 
 section {
-    padding: 60px 0;
+    padding: 20vh 0;
     margin: 0 auto;
-    width: 60%;
+    width: 65%;
+}
+
+a{
+    text-decoration: none;
+    color: initial;
 }
 
 @media screen and (max-width: 600px) {
-    section {
-        width: 80%;
-    }
+    section {width: 80%;}
 }
 
 .row::after {
@@ -60,53 +65,18 @@ section {
     display: table;
 }
 
-.col-1 {
-    width: 8.33%;
-}
-
-.col-2 {
-    width: 16.66%;
-}
-
-.col-3 {
-    width: 25%;
-}
-
-.col-4 {
-    width: 33.33%;
-}
-
-.col-5 {
-    width: 41.66%;
-}
-
-.col-6 {
-    width: 50%;
-}
-
-.col-7 {
-    width: 58.33%;
-}
-
-.col-8 {
-    width: 66.66%;
-}
-
-.col-9 {
-    width: 75%;
-}
-
-.col-10 {
-    width: 83.33%;
-}
-
-.col-11 {
-    width: 91.66%;
-}
-
-.col-12 {
-    width: 100%;
-}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
 
 [class*="col-"] {
     float: left;
@@ -116,59 +86,33 @@ section {
     font-family: Rubik;
     src: url(fonts/Rubik/Rubik-Medium.ttf);
 }
-
 @font-face {
     font-family: RubikRegular;
     src: url(fonts/Rubik/Rubik-Regular.ttf);
 }
-
 @font-face {
     font-family: RubikLight;
     src: url(fonts/Rubik/Rubik-Light.ttf);
 }
-
 @font-face {
     font-family: Grotesk;
     src: url(fonts/Grotesk/NHaasGroteskTXPro-75Bd.ttf);
 }
-
 @font-face {
     font-family: GroteskLight;
     src: url(fonts/NHaasGroteskTXPro-55Rg.ttf);
 }
-
 @font-face {
     font-family: Circular;
     src: url(fonts/Circular/circular.ttf);
 }
-
 @font-face {
     font-family: CircularMedium;
     src: url(fonts/Circular/Circular\ Std\ Medium.ttf);
 }
-
 @font-face {
     font-family: CircularBold;
     src: url(fonts/Circular/Circular\ Std\ Bold.ttf);
-}
-
-.produto section {
-    padding: 60px 0;
-    margin: 0 auto;
-    width: 80%;
-}
-
-.text {
-    font-family: RubikRegular;
-    font-size: 16px;
-    text-align: justify;
-}
-
-.card_text p {
-    background-color: rgb(64, 176, 220);
-    color: white;
-    border-radius: 4px;
-    padding: 1em;
 }
 
 .center {
@@ -204,7 +148,7 @@ section {
 .title {
     margin: auto;
     width: 80%;
-    margin-top: 12vh;
+    margin-top: 22vh;
     color: white;
     font-family: Circular;
 }
@@ -213,98 +157,74 @@ section {
     font-size: clamp(2.5rem, 1em + 4vw, 4rem);
 }
 
-
-.servicos {
-    padding: 60px 0;
-    margin: 0 auto;
-}
-
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 350px);
+    grid-template-columns: repeat(auto-fit, 600px);
     grid-gap: 30px;
     justify-content: center;
 }
-
 .card {
-    padding: 20px 20px;
     margin-top: 2em;
-    height: clamp(11rem, 140px, 13rem);
+    /* height: clamp(11rem, 140px, 13rem); */
+    /* width: 35vw; */
+    height: 20rem;
     border-radius: 5px;
-    background: #ffffff;
-    box-shadow: 10px #0d82a2;
-
-    transition: 0.25s ease;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.c-carousel_slide_mobile {
-    align-items: center;
-    display: flex;
-    font-size: 1em;
-    justify-content: center;
-    padding: 1em 1em;
-    margin: 1em 1em;
-    font-family: Circular;
+.card:hover .card-logo{
+    width: 45%;
 }
 
-.card_carousel {
-    padding: 20px 20px;
-    margin-top: 2em;
-    height: clamp(11rem, 140px, 13rem);
+.card-content{
+    height: 100%;
+    position: relative;
+}
+
+.gestao_pedidos{
+    background-color: #002F51;
+    color: white;
     border-radius: 5px;
-    background: #ffffff;
-    box-shadow: -10px 10px 20px #eeeeee,
-        10px -10px 20px #ffffff;
-    transition: 0.25s ease;
 }
 
-#gestao_central:hover {
-    color: #045f83;
-    background-color: #e7f4fa;
-    transform: scale(1.1);
+.gestao_central{
+    background-color: #17A5DE;
+    color: white;
+    border-radius: 5px;
 }
 
-#gestao_central:hover h3 {
-    color: #045f83;
+.card-logo{
+    background-color: #fff;
+    padding: 18% 20px;
+    height: 100%;
+    width: 45%;
+    z-index: 1;
+    position: absolute;
+    transition: 500ms;
+    text-align: center;
 }
 
-#gestao_de_pedidos:hover {
-    color: #690333;
-    background-color: #ffe1ef;
-    transform: scale(1.1);
-}
-
-#gestao_de_pedidos:hover h3 {
-    color: #550c2e;
-}
-
-.card-icon {
-    height: 35px;
+.card-text{
+    width: 55%;
+    padding: 20px;
+    position: relative;
+    float: right;
+    margin: 90px auto;
 }
 
 .card-title {
     color: #3D3D3E;
-    margin-left: 25px;
-    margin-top: 8px;
     font-family: CircularBold;
 }
-
 .card-text {
     padding-top: 10px;
     font-family: RubikLight;
     font-size: clamp(0.5rem, 15px, 1rem);
 }
 
-
-
-.produto {
-    margin: 5em 0;
-}
-
 .cta {
     margin-top: 3em;
 }
-
 .ctaButton {
     border-radius: 100px;
     text-decoration: none;
@@ -314,16 +234,10 @@ section {
     border: solid 1px #D01117;
     transition: 200ms ease;
 }
-
 .ctaButton:hover {
     color: #ffffff;
     font-weight: bold;
     background-color: #D01117;
-}
-
-
-.carousel_cards {
-    display: none;
 }
 
 .c-carousel_slide {
@@ -334,18 +248,16 @@ section {
     padding: 3em 3em;
     margin: 2em 2em;
     font-family: Circular;
+    background-color: #fff;
 }
-
 .carousel_button_prev,
 .carousel_button_next {
     top: 42%;
     position: absolute;
 }
-
 .carousel_button_next {
     right: 0px;
 }
-
 .carousel_button {
     border: none;
     font-size: x-large;
@@ -354,22 +266,18 @@ section {
     width: 30px;
     height: 30px;
 }
-
 .carousel_button:hover {
     cursor: pointer;
 }
-
-.carousel_clients,
-.carousel_cards,
-.carousel_gestaoDePedidos,
-.carousel_gestaoCentral {
+.carousel_clients{
     position: relative;
-
+    margin: 0 auto;
+    width: 90%;
 }
-
 
 #sobre .text {
     padding-right: 2em;
+    font-family: Circular;
 }
 
 .contact {
@@ -402,7 +310,6 @@ section {
 iframe {
     margin: 0.8em 0;
 }
-
 
 .footer {
     background-color: #D01117;
@@ -454,72 +361,6 @@ iframe {
     background-color: #D01117;
     color: #ffffff;
     font-size: 1.5em;
-}
-
-#textil::before {
-    background-image: url('./img/areas/textil.jpg');
-}
-
-#plastico::before {
-    background-image: url('./img/areas/plastico.jpg');
-}
-
-#metalurgia::before {
-    background-image: url('./img/areas/metalurgia.jpg');
-}
-
-#alimenticio::before {
-    background-image: url('./img/areas/alimenticio.jpg');
-}
-
-#moveleira::before {
-    background-image: url('./img/areas/moveleira.jpg');
-}
-
-#varejo::before {
-    background-image: url('./img/areas/varejo.jpg');
-}
-
-.module {
-    position: relative;
-    height: 50vh;
-}
-
-.module::before {
-    content: "";
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: cover;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    filter: grayscale(50%) contrast(40%);
-    transition: 0.25s ease;
-}
-
-.module:hover::before {
-    filter: none;
-}
-
-.module-inside {
-    /* This will make it stack on top of the ::before */
-    font-family: CircularBold;
-    font-size: 2em;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    margin: auto auto;
-    padding-top: 25%;
-    position: relative;
-    color: #ffffff;
-}
-
-.red_filter {
-    background-color: #d011179a;
-    padding: 1em 0;
-    width: 80%;
-    margin: 0 auto;
 }
 
 @media screen and (max-width: 600px) {
@@ -578,17 +419,9 @@ iframe {
     .col-xs-12 {
         width: 100%;
     }
-
-    .cards {
-        display: none;
-    }
 }
 
 @media screen and (max-width: 860px) {
-    .cards {
-        display: none;
-    }
-
     iframe {
         width: 100%;
     }
