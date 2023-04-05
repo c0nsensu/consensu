@@ -3,85 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-.croma {
-    background-color: green;
-}
-
-.crome {
-    background-color: blue;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-}
-
-h2 {
-    color: #3D3D3E;
-    font-family: Grotesk;
-    font-size: clamp(1.75em, 1em + 3vw, 2.5em);
-    text-align: center;
-    padding-bottom: 1em;
-}
-
-h3 {
-    padding: 0.3em 0 0 0.5em;
-    font-family: Circular;
-    color: #3D3D3E;
-}
-
-header {
-    position: relative;
-    background-image: url(img/duotone.png);
-    background-position: center;
-    background-attachment: fixed;
-    height: 80vh;
-}
-
-section {
-    padding: 20vh 0;
-    margin: 0 auto;
-    width: 65%;
-}
-
-a{
-    text-decoration: none;
-    color: initial;
-}
-
-@media screen and (max-width: 600px) {
-    section {width: 80%;}
-}
-
 .row::after {
     content: "";
     clear: both;
     display: table;
 }
-
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-[class*="col-"] {
-    float: left;
-}
-
+[class*="col-"] {float: left;}
 @font-face {
     font-family: Rubik;
     src: url(fonts/Rubik/Rubik-Medium.ttf);
@@ -115,6 +42,70 @@ a{
     src: url(fonts/Circular/Circular\ Std\ Bold.ttf);
 }
 
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.croma {
+    background-color: green;
+}
+
+.crome {
+    background-color: blue;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+h2 {
+    color: #3D3D3E;
+    font-family: Grotesk;
+    font-size: clamp(1.75em, 1em + 3vw, 2.5em);
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+h3 {
+    padding: 0.3em 0 0 0.5em;
+    font-family: Circular;
+    color: #3D3D3E;
+}
+
+.intro {
+    position: relative;
+    background-image: url(img/duotone.png);
+    background-position: center;
+    background-attachment: fixed;
+    height: 80vh;
+}
+
+section {
+    padding: 20vh 0;
+    margin: 0 auto;
+    width: 65%;
+}
+
+a{
+    text-decoration: none;
+    color: initial;
+}
+
 .center {
     display: flex;
     flex-wrap: nowrap;
@@ -123,8 +114,19 @@ a{
     padding: 0 2%;
 }
 
-.nav {
+nav {
     padding: 10px 0 5px 0;
+    position: fixed;
+    top: 0px;
+    z-index: 99;
+    width: 100%;
+    transition: 500ms;
+}
+
+.activeNav{
+    background-color: #fc0b13b0;
+    backdrop-filter: blur(15px);
+    top: 0px;
 }
 
 .logo {
@@ -477,4 +479,8 @@ iframe {
     .col-s-12 {
         width: 100%;
     }
+}
+
+@media screen and (max-width: 600px) {
+    section {width: 80%;}
 }
