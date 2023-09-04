@@ -153,7 +153,7 @@ li {
 }
 
 section {
-    padding: 20vh 0;
+    padding: 13vh 0;
     margin: 0 auto;
     width: 65%;
 }
@@ -213,7 +213,7 @@ nav {
 .title {
     margin: auto;
     width: 80%;
-    margin-top: 22vh;
+    margin-top: 30vh;
     color: white;
     font-family: Circular;
 }
@@ -253,27 +253,20 @@ nav {
 }
 
 .card-logo {
-    background-color: #fff;
+    /* background-color: #fff; */
     height: 30%;
     z-index: 1;
     position: relative;
-    transition: 500ms;
+    /* transition: 500ms; */
     text-align: center;
 }
 
-.imagem2 {
+.imagem {
     top: 35%;
     left: 25%;
     position: absolute;
 }
 
-.imagem {
-    top: 30%;
-    left: 30%;
-    position: absolute;
-}
-
-.card-content {}
 
 .card-title {
     color: #3D3D3E;
@@ -285,28 +278,45 @@ nav {
     padding: 40px;
     padding-top: 60px;
     font-family: Circular;
-    font-size: 45px;
+    font-size: 40px;
 }
 
 .card_button {
     text-align: center;
 }
 
-.card_button a {
+.card_button_gc a {
     border-radius: 100px;
     text-decoration: none;
     color: #ffffff;
     padding: 0.6em 0.6em;
     font-size: 1.5em;
     font-family: Circular;
-    border: solid 1.5px #ffffff;
+    border: solid 2px #ffffff;
     transition: 200ms ease;
 }
 
-.card_button a:hover {
+.card_button_gdp a {
+    border-radius: 100px;
+    text-decoration: none;
     color: #ffffff;
-    background-color: #25D366;
-    border: solid 1px #ffffff;
+    padding: 0.6em 0.6em;
+    font-size: 1.5em;
+    font-family: Circular;
+    border: solid 2px #ffffff;
+    transition: 200ms ease;
+}
+
+.card_button_gc a:hover {
+    color: #17A5DE;
+    background-color: #ffffff;
+    border: solid 2px #ffffff;
+}
+
+.card_button_gdp a:hover {
+    color: #002F51;
+    background-color: #ffffff;
+    border: solid 2px #ffffff;
 }
 
 .cta {
@@ -319,7 +329,7 @@ nav {
     color: #D01117;
     padding: 1em 2em;
     font-family: Circular;
-    border: solid 1px #D01117;
+    border: solid 2px #D01117;
     transition: 200ms ease;
 }
 
@@ -381,7 +391,6 @@ nav {
 }
 
 .whats_btn {
-    margin-top: 1em;
     margin-left: 0.5em;
 }
 
