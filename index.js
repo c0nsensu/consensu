@@ -1,21 +1,19 @@
-var posicaoAntiga = window.pageYOffset;
+var posicaoAntiga = window.scrollY;
 
-window.onscroll = function(){
-  var posicaoatual = window.pageYOffset;
-  if(posicaoAntiga > posicaoatual){
-    document.getElementById('nav').classList.add('activeNav')
+window.onscroll = function () {
+  var posicaoatual = window.scrollY;
+  if (posicaoAntiga > posicaoatual) {
+    document.getElementById("nav").classList.add("activeNav");
     document.getElementById("nav").style.top = "0";
-    if(posicaoatual == 0){
-      document.getElementById('nav').classList.remove('activeNav')
+    if (posicaoatual == 0) {
+      document.getElementById("nav").classList.remove("activeNav");
     }
-  }
-  else{
+  } else {
     //document.getElementById('nav').classList.remove('activeNav')
     document.getElementById("nav").style.top = "-100px";
   }
   posicaoAntiga = posicaoatual;
-}
-
+};
 
 const $carousel3 = document.querySelector(".js_carousel_clients");
 new Glider($carousel3, {
