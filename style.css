@@ -146,7 +146,7 @@ li {
 
 .intro {
     position: relative;
-    background-image: url(img/duotone.png);
+    background-image: url(img/desktop.png);
     background-position: center;
     background-attachment: fixed;
     height: 80vh;
@@ -430,65 +430,16 @@ iframe {
     font-size: 1em;
 }
 
-@media screen and (max-width: 600px) {
-    [class*="col-"] {
-        width: 100%;
-    }
-
-    iframe {
-        width: 100%;
-    }
-
-    .col-xs-1 {
-        width: 8.33%;
-    }
-
-    .col-xs-2 {
-        width: 16.66%;
-    }
-
-    .col-xs-3 {
-        width: 25%;
-    }
-
-    .col-xs-4 {
-        width: 33.33%;
-    }
-
-    .col-xs-5 {
-        width: 41.66%;
-    }
-
-    .col-xs-6 {
-        width: 50%;
-    }
-
-    .col-xs-7 {
-        width: 58.33%;
-    }
-
-    .col-xs-8 {
-        width: 66.66%;
-    }
-
-    .col-xs-9 {
-        width: 75%;
-    }
-
-    .col-xs-10 {
-        width: 83.33%;
-    }
-
-    .col-xs-11 {
-        width: 91.66%;
-    }
-
-    .col-xs-12 {
-        width: 100%;
-    }
-}
-
 @media screen and (max-width: 860px) {
+    .intro {
+        position: relative;
+        background-image: url(img/tablet.png);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 80vh;
+    }
+
     iframe {
         width: 100%;
     }
@@ -547,6 +498,16 @@ iframe {
 }
 
 @media screen and (max-width: 600px) {
+
+    .intro {
+        position: relative;
+        background-image: url(img/mobile.png);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 80vh;
+    }
+
     section {
         width: 80%;
     }
@@ -633,5 +594,61 @@ iframe {
 
     h4 {
         padding-bottom: 0.5em
+    }
+
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    .col-xs-1 {
+        width: 8.33%;
+    }
+
+    .col-xs-2 {
+        width: 16.66%;
+    }
+
+    .col-xs-3 {
+        width: 25%;
+    }
+
+    .col-xs-4 {
+        width: 33.33%;
+    }
+
+    .col-xs-5 {
+        width: 41.66%;
+    }
+
+    .col-xs-6 {
+        width: 50%;
+    }
+
+    .col-xs-7 {
+        width: 58.33%;
+    }
+
+    .col-xs-8 {
+        width: 66.66%;
+    }
+
+    .col-xs-9 {
+        width: 75%;
+    }
+
+    .col-xs-10 {
+        width: 83.33%;
+    }
+
+    .col-xs-11 {
+        width: 91.66%;
+    }
+
+    .col-xs-12 {
+        width: 100%;
     }
 }
