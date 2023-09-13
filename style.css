@@ -146,7 +146,7 @@ li {
 
 .intro {
     position: relative;
-    background-image: url(img/desktop.png);
+    background-image: url(img/desktop.webp);
     background-position: center;
     background-attachment: fixed;
     height: 80vh;
@@ -156,6 +156,10 @@ section {
     padding: 5vh 0 15vh 0;
     margin: 0 auto;
     width: 65%;
+}
+
+#produtos{
+    width: 85% !important;
 }
 
 a {
@@ -433,7 +437,7 @@ iframe {
 @media screen and (max-width: 860px) {
     .intro {
         position: relative;
-        background-image: url(img/tablet.png);
+        background-image: url(img/tablet.webp);
         background-position: top;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -497,11 +501,62 @@ iframe {
     }
 }
 
+@media screen and (max-width: 1000px) {
+    
+    .col-m-1 {
+        width: 8.33%;
+    }
+
+    .col-m-2 {
+        width: 16.66%;
+    }
+
+    .col-m-3 {
+        width: 25%;
+    }
+
+    .col-m-4 {
+        width: 33.33%;
+    }
+
+    .col-m-5 {
+        width: 41.66%;
+    }
+
+    .col-m-6 {
+        width: 50%;
+    }
+
+    .col-m-7 {
+        width: 58.33%;
+    }
+
+    .col-m-8 {
+        width: 66.66%;
+    }
+
+    .col-m-9 {
+        width: 75%;
+    }
+
+    .col-m-10 {
+        width: 83.33%;
+    }
+
+    .col-m-11 {
+        width: 91.66%;
+    }
+
+    .col-m-12 {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 600px) {
 
     .intro {
         position: relative;
-        background-image: url(img/mobile.png);
+        background-image: url(img/mobile.webp);
         background-position: top;
         background-repeat: no-repeat;
         background-attachment: fixed;
